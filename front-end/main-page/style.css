@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Markazi+Text:wght@400;500;600;700&family=Poppins:wght@500;600&family=Readex+Pro:wght@300;400;500;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Readex Pro',sans-serif;
+    text-decoration: none;
+    
+
+}
+
+body {
+    font-family: 'Readex Pro',sans-serif;
+    background-color: whitesmoke;
+}
+
+
+
+  #hero{
+      width: 100vw;
+      height: 100vh;
+      object-fit: contain;
+      background: url(Screenshot\ 2023-12-22\ 001135.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-top: 32px;
+  } 
+
+  .container{
+      max-width: 1140px;
+      margin: 0 auto;
+  }
+
+  .nav-bar{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+
+  }
+
+  .nav-bar .menue a:not(:last-child){
+      color: #000;
+      margin-left: 60px;
+      font-size: 16px;
+      transition-duration: 0.4s;
+      letter-spacing: 1px;
+  }
+
+  .nav-bar .menue a:not(:last-child):hover{
+      border-bottom: 2px solid #000 ;
+      padding-bottom: 10px;
+  }
+
+  .nav-bar .menue .btn-sign-up{
+      color: #000;
+      margin-left: 120px;
+      padding: 10px 25px;
+      font-size: 16px;
+      background: rgba(225,225,225,0.2);
+      border-radius: 50px;
+  }
+
+  .nav-bar .menue .btn-sign-up :hover{
+      background-color: #000;
+      color: #2e2c2c;
+  }
+
+  .hero-box{
+      width: 50%;
+      margin-top: 200px;
+      margin-left: 690px;
+  }
+
+  .hero-box .hero-heading{
+      color: #000;
+      font-size: 50px;
+      line-height: 65px;
+      width: 650px;
+      letter-spacing: 2px;
+      font-weight: bold;
+
+
+  }
+  .hero-box .hero-desc{
+      color: #000;
+      font-size: 19px;
+      line-height: 27px;
+      padding: 30px 0px;
+  }
+
+  .hero-box .btn-box{
+      margin-top: 60px;
+  }
+
+  .hero-box .browse{
+      background: #fff;
+      margin-right: 30px;
+      padding: 15px 40px;
+      border-radius: 50px;
+      color: #2e2c2c;
+      border: 2px solid #fff;
+      font-weight: bold;
+      transition: 0.5s;
+
+  }
+
+  .hero-box .browse:hover{
+      transition: 0.5s;
+  }
+
+  .hero-box .contact{
+      background: #fff;
+      margin-right: 30px;
+      padding: 15px 40px;
+      border-radius: 50px;
+      color: #2e2c2c;
+      background: transparent;
+      border: 2px solid #fff;
+      font-weight: bold;
+      color: #fff;
+      transition: 0.5s;
+
+  }
+
+  .hero-box .contact:hover{
+
+      transition: 0.5s;
+
+  }
+  .services_cont {
+    width: 100%;
+    background-color: whitesmoke;
+    margin-bottom: 13%;
+}
+
+
+
+/* --------------------------------------------------- */
+/* كاونتر بطاقات الخدمات */
+
+.services_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.services_card {
+    margin-top : 5%;
+    cursor: pointer;
+    transition: .25s ease;
+    width: 33vw;
+    height: 35vh;
+    border-radius: 8px;
+    
+}
+
+.services_card:hover {
+    border-radius: 12px;
+    filter: brightness(80%);
+}
+.services_card h1 {
+    color: white;
+    padding-top: 20%;
+    padding-right: 8%;
+    font-size: 35px;
+    text-decoration: 2px overline #eca55f;
+}
+
+.services_card a {
+    color: white;
+    background-color: #d39354;
+    width: 9%;
+    padding: 7px 15px 7px 55px;
+    border-radius: 3px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 28px;
+    transition: .25s ease;
+    margin-right: 8%;
+    margin-top: 5%;
+}
+
+.services_card a:hover {
+    margin-right: 10%;
+}
+
+#arrow_service {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+
+#coffee {
+    background-image: url("Screenshot\ 2023-12-22\ 001135.png");
+    background-size: cover;
+}
+
+#shop {
+    background-image: url("Screenshot\ 2023-12-22\ 001135.png");
+    background-size: cover;
+}
+
+
+/* ------------------------------------------ */
+.res_cont {
+    padding-top: 3%;
+    background-color: wheat;
+    height: 100vh;
+}
+.res_cont h1 {
+    color: #0e0e0e;
+    padding-right: 2%;
+    margin-right: 4%;
+    border-right: 4px solid #eca55f;
+}
+.test12{
+    color: #000;
+}
+/* 3D tower loader made by: csozi | Website: www.csozi.hu*/
+.second
+{
+    display:flex;
+    flex-wrap: wrap;
+    height:90vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.inventor
+{
+    width:100%;
+    border-radius:15px;
+
+}
+.inventor1{
+    width:79%;
+    border-radius:15px;
+
+}
+.card{
+    color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    height: 50vh;
+    gap:5%;
+    text-align: center;
+    padding:15px;
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.75);
+    border:none;
+    width:30%;
+    position: relative;
+}
+.card h1
+{
+    transition: 0.5s;
+}
+.card p
+{
+    font-size:19px;
+    transition: 0.5s    ;
+}
+.card:before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    top:0;
+    left: 0;
+    height:5%;
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+    transition:.5s ease;
+    
+}
+.card:hover:before
+{
+    width:100%;
+    height: 100%;
+    border-radius:15px;
+}
+
+#abn_alhethm
+{
+    width:40%;
+}
+#sena
+{
+    width: 35%;
+}
+
+.loader {
+    scale: 11;
+    height: 50px;
+    width: 40px;
+    margin-left: 250px;
+    margin-top: 200px;
+    
+  }
+  
+  .box {
+    position: relative;
+    opacity: 0;
+    left: 10px;
+  }
+  
+  .side-left {
+    position: absolute;
+    background-color: whitesmoke;
+    width: 19px;
+    height: 5px;
+    transform: skew(0deg, -25deg);
+    top: 14px;
+    left: 10px;
+  }
+  
+  .side-right {
+    position: absolute;
+    background-color: #5fa8f5;
+    width: 19px;
+    height: 5px;
+    transform: skew(0deg, 25deg);
+    top: 14px;
+    left: -9px;
+  }
+  
+  .side-top {
+    position: absolute;
+    background-color: #5fa8f5;
+    width: 20px;
+    height: 20px;
+    rotate: 45deg;
+    transform: skew(-20deg, -20deg);
+  }
+  
+  .box-1 {
+    animation: from-left 4s infinite;
+  }
+  
+  .box-2 {
+    animation: from-right 4s infinite;
+    animation-delay: 1s;
+  }
+  
+  .box-3 {
+    animation: from-left 4s infinite;
+    animation-delay: 2s;
+  }
+  
+  .box-4 {
+    animation: from-right 4s infinite;
+    animation-delay: 3s;
+  }
+  
+  @keyframes from-left {
+    0% {
+      z-index: 20;
+      opacity: 0;
+      translate: -20px -6px;
+    }
+  
+    20% {
+      z-index: 10;
+      opacity: 1;
+      translate: 0px 0px;
+    }
+  
+    40% {
+      z-index: 9;
+      translate: 0px 4px;
+    }
+  
+    60% {
+      z-index: 8;
+      translate: 0px 8px;
+    }
+  
+    80% {
+      z-index: 7;
+      opacity: 1;
+      translate: 0px 12px;
+    }
+  
+    100% {
+      z-index: 5;
+      translate: 0px 30px;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes from-right {
+    0% {
+      z-index: 20;
+      opacity: 0;
+      translate: 20px -6px;
+    }
+  
+    20% {
+      z-index: 10;
+      opacity: 1;
+      translate: 0px 0px;
+    }
+  
+    40% {
+      z-index: 9;
+      translate: 0px 4px;
+    }
+  
+    60% {
+      z-index: 8;
+      translate: 0px 8px;
+    }
+  
+    80% {
+      z-index: 7;
+      opacity: 1;
+      translate: 0px 12px;
+    }
+  
+    100% {
+      z-index: 5;
+      translate: 0px 30px;
+      opacity: 0;
+    }
+  }
+  button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  
+  .a1{
+    color: #fff;
+  }
+  .more-button{
+    margin-left: 177vh;
+    margin-top: 200px;
+    position: absolute;
+
+  }
+  .myhomw{
+    margin-left: 150vh;
+    margin-top: 50px;
+    position: relative;
+  }
+  .p2{
+    width: 500px;
+    position: absolute;
+    margin-left: 130vh;
+    margin-top: 25px;
+    font-size: larger;
+
+    
+  }
+  .div22{
+    border-left: #2ba8fb;
+  }
+  .t3ref{
+    margin-left: 154vh;
+
+
+  }
+
+  
