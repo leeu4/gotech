@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@500&family=Rubik&display=swap');
 
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Tajawal' sans-serif;
+}
   *{
       margin: 0px;
       padding: 0px;
@@ -63,14 +71,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@00&display=swap');
 
 
-*,
-*::before,
-*::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Tajawal' sans-serif;
-}
+
 
 html {
     scroll-behavior: smooth;
@@ -266,12 +267,13 @@ main .everything .e30 .price .down a button {
     outline: none;
     border: none;
     color: white;
-    background: rgb(65, 30, 8);
+    background-color: #5fa8f5;
     transition: 0.3s ease;
+    cursor: pointer;
 }
 
 main .everything .e30 .price .down a button:hover {
-    background: rgb(49, 23, 6);
+    color: wheat;
 }
 
 main .everything .e30 .contactus {
