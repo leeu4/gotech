@@ -17,8 +17,7 @@ server.post('/login',async(req:Request,res:Response)=>{
     else{}
 })
 server.get('/products',async(req:Request,res:Response)=>{
-    const products = await prisma.products.findMany();
-    return res.json(products);
+    
 })
 server.get('/home',(req:Request,res:Response)=>{
     
