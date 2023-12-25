@@ -10,24 +10,33 @@ generator client {
 
 model User {
   id       String    @id @default(uuid())
-  username String
+  username String @unique
   password String
+  email    String @unique
   reviews  Reviews[]
+  role ROLE @default(USER)
 }
 
 model Reviews {
-  id        String @id @default(uuid())
+  id        String     @id @default(uuid())
   text      String
-  author_id String
-  user      User   @relation(fields: [author_id], references: [id])
-  product Products[]
+  author_name String
+  user      User       @relation(fields: [author_name], references: [username])
+  product   Products[]
 
-  @@index([author_id])
+  @@index([author_name])
 }
 
 model Products {
-  id            String @id @default(uuid())
+  id            String    @id @default(uuid())
+  product_image String
   product_name  String
   product_price Float
-  reviews Reviews[]
+  reviews       Reviews[]
+}
+
+enum ROLE {
+  USER
+  ADMIN
+  SUPERADMIN
 }
