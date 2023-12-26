@@ -8,28 +8,29 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/3b3dc9be1b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body id="body">
     <div id="load_container"></div>
     <main>
         <div style="position: absolute;left:0;top:0;margin:10px;">
-            <a href="#" style="font-size:20px;margin-left: 15%;">&leftarrow;&nbsp;العودة</a>
+            <a href="../main-page/index.html" style="font-size:20px;margin-left: 15%; color:white;">&leftarrow;&nbsp;العودة</a>
         </div>
         <img src="">
         <form>
             <div>
-                <h1>تسجيل الدخول</h1>
+                <h1>تسجيل حساب</h1>
             </div>
             <label style="margin-left: 59%;">اسم المستخدم</label>
             <input id="username" type="text">
             <label>كلمة المرور</label>
             <input type="password" id="password"><i class="fa-solid fa-eye" id="first_eye"></i>
+            <label class="email_label">البريد الالكتروني</label>
+            <input type="email" id="email">
             <input type="submit" id="submit">
-            <p>&nbsp; ليس لديك حساب؟<a href="../register/index.html">انشاء حساب</a></p>
-            <a href="#">نسيت كلمة المرور</a>
+            <p>&nbsp;لديك حساب بالفعل؟<a href="../login/index.html">سجل دخول</a></p>
         </form>
     </main>
     <section>
-        <h1>او سجل دخول باستخدام</h1>
+        <h1>او سجل حساب باستخدام</h1>
         <div id="container"></div>
     </section>
     <script src="script.js"></script>
