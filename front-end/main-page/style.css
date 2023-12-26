@@ -10,6 +10,7 @@
 body {
     font-family: 'Readex Pro',sans-serif;
     background-color: whitesmoke;
+    scroll-behavior: smooth;
   
   }
 
@@ -22,7 +23,11 @@ body {
       background-repeat: no-repeat;
       background-size: cover;
       padding-top: 32px;
-  } 
+
+
+    
+      
+    } 
 
   .container{
       max-width: 1140px;
@@ -482,3 +487,5 @@ body {
   .t3ref{
     margin-left: 154vh;
   }
+  
+  
