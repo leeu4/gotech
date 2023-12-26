@@ -135,4 +135,116 @@ body {
     background-color: whitesmoke;
     margin-bottom: 13%;
 }
+.second
+{
+    display:flex;
+    flex-wrap: wrap;
+    height:90vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.inventor
+{
+    width:70%;
+    border-radius:15px;
 
+}
+.inventor1{
+    width:79%;
+    border-radius:15px;
+
+}
+.card{
+    color:rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: center;
+    height: 50vh;
+    gap:5%;
+    text-align: center;
+    padding:15px;
+    box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.75);
+    border:none;
+    width:30%;
+    position: relative;
+}
+.card h1
+{
+    transition: 0.5s;
+}
+.card p
+{
+    font-size:19px;
+    transition: 0.5s    ;
+}
+.card:before {
+    content: "";
+    position: absolute;
+    width: 5%;
+    top:0;
+    left: 0;
+    height:5%;
+    border-bottom-right-radius: 50px;
+    z-index: -1;
+    transition:.5s ease;
+    
+}
+.card:hover:before
+{
+    width:100%;
+    height: 100%;
+    border-radius:15px;
+}
+
+#abn_alhethm
+{
+    width:40%;
+}
+#sena
+{
+    width: 35%;
+}
+button {
+    padding: 12.5px 30px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #2ba8fb;
+    color: #ffffff;
+    font-weight: Bold;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #6fc5ff;
+    box-shadow: 0 0 20px #6fc5ff50;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #3d94cf;
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+  }
+  
+  .a1{
+    color: #fff;
+  }
+  .more-button{
+    margin-left: 177vh;
+    margin-top: 200px;
+    position: absolute;
+
+  }
+  .t3ref{
+    margin-left: 154vh;
+  }
+  
