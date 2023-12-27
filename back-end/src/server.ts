@@ -43,10 +43,12 @@ server.post("/login", async (req: Request, res: Response) => {
       token,
     });
   });
-server.post("/admin",protect,authorize("ADMIN","SUPERADMIN"),async (req:Request,res:Response)=>{
+server.post("/addproduct",authorize("ADMIN","SUPERADMIN"),async (req:Request,res:Response)=>{
   const new_product = req.body as Products;
-  
+  prisma.products.create({data:new_product});
+  return res.status(200).json({message:`Product ${new_product.product_name} has been added successfully`})
 })
+
 server.listen(port,()=>{
     connectDB()
     console.log(`Server is Running on Port:${port}`)

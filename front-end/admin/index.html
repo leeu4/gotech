@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>الادارة|GOTECH</title>
+    <style>
+        .loader {
+            width: 48px;
+            height: 48px;
+            border: 5px solid rgb(0, 0, 0);
+            position: absolute;
+            border-bottom-color: #ffffff;
+            border-radius: 50%;
+            display: inline-block;
+            box-sizing: border-box;
+            animation: rotation 1s linear infinite;
+        }
+
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #load_container {
+            background: rgba(0, 0, 0, .4);
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="load_container"></div>
+    <form id="form">
+        <h1>اضافة المنتجات</h1>
+        <input type="text" id="p_name" placeholder="اسم المنتج">
+        <input type="text" id="p_img" placeholder="صورة المنتج (رابط)">
+        <input type="number" id="p_price" placeholder="سعر المنتج">
+        <input type="submit" value="ارسال المنتج">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>
