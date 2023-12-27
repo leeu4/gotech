@@ -32,7 +32,6 @@ form.addEventListener('submit',async(e)=>{
     load.className = "loader";
     load_container.appendChild(load);
     load_container.style="display:flex; justify-content:center;align-items:center;";
-    
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
     try{

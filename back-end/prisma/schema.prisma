@@ -10,7 +10,7 @@ generator client {
 
 model User {
   id       String    @id @default(uuid())
-  username String @unique
+  username String
   password String
   email    String @unique
   reviews  Reviews[]
@@ -21,7 +21,7 @@ model Reviews {
   id        String     @id @default(uuid())
   text      String
   author_name String
-  user      User       @relation(fields: [author_name], references: [username])
+  user      User       @relation(fields: [author_name], references: [id])
   product   Products[]
 
   @@index([author_name])
