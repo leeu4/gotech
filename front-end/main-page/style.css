@@ -18,7 +18,7 @@ body {
       width: 100vw;
       height: 100vh;
       object-fit: contain;
-      background: url(Screenshot\ 2023-12-22\ 001135.png);
+      background: url(Screenshot\ 2023-12-23\ 001017.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -461,6 +461,8 @@ body {
   
   .a1{
     color: #fff;
+    position: relative;
+
   }
   .more-button{
     margin-left: 177vh;
