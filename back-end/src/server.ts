@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import { User,Reviews,Products } from '@prisma/client';
 import { protect,authorize } from './middleware/auth';
+import bodyParser, {BodyParser} from 'body-parser'
 import {prisma,connectDB}from './config/db';
 import cors from 'cors';
 import * as jwt from 'jsonwebtoken';
@@ -9,6 +10,7 @@ const server = express();
 const port = 3000;
 server.use(cors());
 server.use(express.json());
+server.use(bodyParser.json());
 
 server.post('/register',async(req:Request,res:Response)=>{
   const new_user = req.body as User
@@ -43,12 +45,16 @@ server.post("/login", async (req: Request, res: Response) => {
       token,
     });
   });
-server.post("/addproduct",authorize("ADMIN","SUPERADMIN"),async (req:Request,res:Response)=>{
+server.post("/addproduct",protect,authorize("ADMIN"),async (req:Request,res:Response)=>{
   const new_product = req.body as Products;
-  prisma.products.create({data:new_product});
-  return res.status(200).json({message:`Product ${new_product.product_name} has been added successfully`})
-})
 
+  await prisma.products.create({data:new_product});
+  return res.status(200).json({message:`تم اضافة المنتج بنجاح`})
+})
+server.get("/getproducts",async(req:Request,res:Response)=>{
+  const products = await prisma.products.findMany();
+  return res.status(200).json(products);
+})
 server.listen(port,()=>{
     connectDB()
     console.log(`Server is Running on Port:${port}`)

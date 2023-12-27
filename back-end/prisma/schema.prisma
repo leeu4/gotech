@@ -31,7 +31,7 @@ model Products {
   id            String    @id @default(uuid())
   product_image String
   product_name  String
-  product_price Float
+  product_price String
   reviews       Reviews[]
 }
 
