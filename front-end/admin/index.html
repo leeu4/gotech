@@ -7,6 +7,12 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>الادارة|GOTECH</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500&family=Markazi+Text:wght@400;500;600;700&family=Poppins:wght@500;600&family=Readex+Pro:wght@300;400;500;600&display=swap');
+        *{
+            margin:0;
+            font-family: 'Readex Pro',sans-serif;
+
+        }
         .loader {
             width: 48px;
             height: 48px;
@@ -36,16 +42,56 @@
             height: 100%;
             display: none;
         }
+        body
+        {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #form
+        {
+            width:40%;
+            height: 60%;
+            border-radius:5px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border:solid 2px;
+            flex-direction: column;
+            gap:20px;
+            border:solid 2px #ccc;
+        }
+        input[type="text"]{
+            width: 39%;
+            padding-left:10px;
+            height: 10%;
+            border-radius:5px;
+            outline:none;
+            border:solid #ccc 3px;
+            font-size:17px
+        }
+        input[type="submit"]{
+            width: 20%;
+            height: 10%;
+            font-size:18px;
+            border-radius:5px;
+            background-color:green;
+            color:white;
+            border:none;
+            cursor:pointer;
+        }
     </style>
 </head>
 
 <body>
+    <a href="../main-page/index.html" style="text-decoration:none;color:black;position:absolute;top:0;left: 0; padding:1%;">&leftarrow;&nbsp;العودة الى الرئيسية</a>
     <div id="load_container"></div>
     <form id="form">
         <h1>اضافة المنتجات</h1>
-        <input type="text" id="p_name" placeholder="اسم المنتج">
-        <input type="text" id="p_img" placeholder="صورة المنتج (رابط)">
-        <input type="number" id="p_price" placeholder="سعر المنتج">
+        <input type="text" id="product_name" placeholder="اسم المنتج">
+        <input type="text" id="product_img" placeholder="صورة المنتج (رابط)">
+        <input type="text" value="SAR" id="product_price" placeholder="سعر المنتج">
         <input type="submit" value="ارسال المنتج">
     </form>
     <script src="script.js"></script>
