@@ -385,6 +385,15 @@ main .everything .e30 .contactus a button {
     justify-content: start;
     gap: 2%;
 }
+main .everything .e70 .imaged {
+    width: 100%;
+    height: 25%;
+    background: url(/front-end/main-page/Screenshot\ 2023-12-22\ 001135.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+}
+
 
 .CustomerCard h3 {
     font-size: 14px;
