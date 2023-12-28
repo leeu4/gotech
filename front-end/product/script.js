@@ -16,7 +16,7 @@ const show_products = async()=>{
             <p class='p_name'>${products[i].product_name}</p> <p class='p_price'>${products[i].product_price}</p> <button>شراء</button>`;
             container.appendChild(card);
         }
-    }
+    }   
     catch(error){
         console.log(error);
     }
