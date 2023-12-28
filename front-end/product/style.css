@@ -248,7 +248,6 @@ button {
   }
   .p_container{
     color: #2ba8fb;
-    gap: 5%;
-    width: calc(100%);
+    gap: 25%;
   }
-  
+
