@@ -1,0 +1,2 @@
+DATABASE_URL='mysql://nxh9c33grb3znwxoyi7t:pscale_pw_IpeIDyT7K5GrV8HCvlHBO8mIMwN6CIkrennkTwcuwdE@aws.connect.psdb.cloud/gotech?sslaccept=strict'
+JWT_SECERT='myjwtsecret'

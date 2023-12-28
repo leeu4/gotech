@@ -541,10 +541,14 @@ button {
     position: absolute;
 
   }
-  .t3ref1{
-    margin-left: 195vh;
+  .t3ref{
+    margin-left:  155vh;
     margin-bottom: 100px;
     width: 100px;
-    font-size: 30px;
+    font-size: 20px;
+}
+.video{
+    margin-left: 200px;
+    position: absolute;
 }
  
