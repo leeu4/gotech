@@ -169,7 +169,7 @@ body {
     padding:15px;
     box-shadow: 5px 7px 5px 0px rgba(0,0,0,0.75);
     border:none;
-    width:30%;
+    width:calc(30%);
     position: relative;
 }
 .card h1
